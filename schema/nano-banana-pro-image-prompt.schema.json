@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Toolcentral-ai/awesome-nano-banana-pro-prompts/schema/nano-banana-pro-image-prompt.schema.json",
+  "title": "Open Nano Banana Pro Image Prompt Bundle",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "source",
+    "count",
+    "prompts"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "2026-06-30"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "url",
+        "api",
+        "openRepository"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "slug",
+          "title",
+          "category",
+          "tags",
+          "model",
+          "domain",
+          "prompt",
+          "source",
+          "attribution",
+          "riskNotice"
+        ],
+        "properties": {
+          "model": {
+            "const": "nano-banana-pro"
+          },
+          "domain": {
+            "const": "image"
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

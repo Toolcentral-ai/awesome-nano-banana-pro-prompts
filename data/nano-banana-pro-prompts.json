@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "2026-06-30",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "source": {
+    "name": "Image Prompt Gallery",
+    "url": "https://imagepromptgallery.com",
+    "api": "https://imagepromptgallery.com/api/public/prompts?domain=image&model=nano-banana-pro",
+    "openRepository": "https://github.com/Toolcentral-ai/awesome-nano-banana-pro-prompts"
+  },
+  "count": 0,
+  "prompts": []
+}
